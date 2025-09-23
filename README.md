@@ -109,17 +109,7 @@ const PROJECTS = [
 git clone [your-repo-url]
 cd portfolio-website
 
-# Serve locally (choose one method)
-# Option 1: Python
-python -m http.server 8000
-
-# Option 2: Node.js
-npx serve .
-
-# Option 3: PHP
-php -S localhost:8000
-
-# Visit http://localhost:8000
+#install any live server
 ```
 
 ### File Structure
@@ -189,6 +179,14 @@ portfolio-website/
 - **Content Security**: No inline scripts or styles
 
 ## 🚀 Deployment
+Absolutely! Here's how you can elegantly add your live link to the README:
+
+---
+
+## 🌐 Live Demo
+
+Check out the deployed portfolio site here:  
+🔗 [Live Website](https://flavian101.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
 ### Static Hosting Options
 - **GitHub Pages**: Push to `gh-pages` branch
