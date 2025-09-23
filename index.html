@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flavian Mwaura — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Flavian Mwaura — graphics programming, C++, DirectX, Python workflows, and technical communication."
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="logo" href="index.html" aria-label="Go to home">FM</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container reveal">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Flavian Mwaura</span></h1>
+          <p>
+            Computer Science undergraduate, graphics programmer, and technical
+            communicator. I design DirectX/C++ graphics demos, build Python
+            workflows, and document systems professionally.
+          </p>
+          <div class="cta-group">
+            <a class="btn primary" href="projects.html">View Projects</a>
+            <a class="btn ghost" href="about.html">Learn More</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="images/hero.png" alt="Abstract real-time graphics render" />
+          <figcaption class="sr-only">
+            Showcase banner featuring graphics programming.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="container features reveal">
+        <h2>What I do</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Graphics programming</h3>
+            <p>
+              DirectX 11/12, C++, Win32, modular rendering pipelines, resource
+              management, and shader authoring.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Workflow automation</h3>
+            <p>
+              Python automation, CI-friendly scripting, data processing, and
+              reproducible pipelines for teams.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Technical communication</h3>
+            <p>
+              Clear documentation, API references, architectural diagrams, and
+              developer onboarding content.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container highlight reveal">
+        <h2>Featured projects</h2>
+        <div id="featured-projects" class="project-grid" aria-live="polite">
+          <!-- Loaded via JS -->
+        </div>
+        <div class="cta-center">
+          <a class="btn" href="projects.html">See all projects</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> Flavian Mwaura</p>
+        <ul class="social">
+          <li><a href="judeflavian20@gmail.com">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/flavian101"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/flavian-mwaura"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

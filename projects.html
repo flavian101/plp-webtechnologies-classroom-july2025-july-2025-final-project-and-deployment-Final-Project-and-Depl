@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Flavian Mwaura</title>
+    <meta
+      name="description"
+      content="DirectX graphics demos, Python automation scripts, SQL database designs, and other projects."
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="logo" href="index.html">FM</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          ☰
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container reveal">
+        <h1>Projects</h1>
+        <p>
+          Selected work spanning real-time graphics, automation, and data
+          systems. Click into each for details and code.
+        </p>
+      </section>
+
+      <section class="container reveal">
+        <h2>Portfolio</h2>
+        <div id="project-list" class="project-grid" aria-live="polite">
+          <!-- Loaded via JS -->
+        </div>
+      </section>
+
+      <section class="container reveal">
+        <h2>Categories</h2>
+        <div class="filters">
+          <button class="btn small" data-filter="all">All</button>
+          <button class="btn small" data-filter="graphics">Graphics</button>
+          <button class="btn small" data-filter="python">Python</button>
+          <button class="btn small" data-filter="sql">SQL</button>
+          <button class="btn small" data-filter="other">Other</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> Flavian Mwaura</p>
+        <ul class="social">
+          <li><a href="judeflavian20@gmail.com">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/flavian101"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/flavian101"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

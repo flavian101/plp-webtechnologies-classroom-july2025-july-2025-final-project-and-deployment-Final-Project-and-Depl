@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Flavian Mwaura</title>
+    <meta
+      name="description"
+      content="Articles on programming tips, workflow optimization, and language learning."
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="logo" href="index.html">FM</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          ☰
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container reveal">
+        <h1>Blog</h1>
+        <p>
+          Notes on graphics programming, workflow optimization, and Japanese
+          language learning.
+        </p>
+      </section>
+
+      <section class="container blog-list reveal">
+        <article class="post-card">
+          <h2>Modular render passes in DirectX</h2>
+          <p>
+            Designing clean interfaces for per-pass resources, synchronization,
+            and debug overlays.
+          </p>
+          <a class="btn small" href="#">Read more</a>
+        </article>
+        <article class="post-card">
+          <h2>Python for reproducible workflows</h2>
+          <p>
+            Packaging scripts, config-driven pipelines, and documenting runbooks
+            for teams.
+          </p>
+          <a class="btn small" href="#">Read more</a>
+        </article>
+        <article class="post-card">
+          <h2>Learning Japanese effectively</h2>
+          <p>
+            Systems thinking applied to language learning: spaced repetition and
+            habit design.
+          </p>
+          <a class="btn small" href="#">Read more</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> Flavian Mwaura</p>
+        <ul class="social">
+          <li><a href="judeflavian20@gmail.com">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/flavian101"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/flavian-mwaura"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

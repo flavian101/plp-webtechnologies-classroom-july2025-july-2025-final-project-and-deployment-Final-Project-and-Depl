@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Flavian Mwaura</title>
+    <meta
+      name="description"
+      content="Contact Flavian Mwaura via form, email, or social links."
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="logo" href="index.html">FM</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          ☰
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container reveal">
+        <h1>Get in touch</h1>
+        <p>
+          Whether it’s graphics engineering, workflow automation, or
+          documentation, I’m open to collaborations and opportunities.
+        </p>
+      </section>
+
+      <section class="container contact-grid reveal">
+        <form id="contact-form" novalidate>
+          <h2>Contact form</h2>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Your name"
+            />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@example.com"
+            />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+              placeholder="How can I help?"
+            ></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <button class="btn primary" type="submit">Send message</button>
+          <p
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+
+        <aside>
+          <h2>Contact details</h2>
+          <ul class="contact-list">
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:flavian@example.com">judeflavian20@gmail.com</a>
+            </li>
+            <li>
+              <strong>GitHub:</strong>
+              <a
+                href="https://github.com/flavian101"
+                target="_blank"
+                rel="noopener"
+                >flavian101</a
+              >
+            </li>
+            <li>
+              <strong>linkedin</strong>
+              <a
+                href="https://linkedin.com/in/flavian-mwaura"
+                target="_blank"
+                rel="noopener"
+                >Flavian Mwaura</a
+              >
+            </li>
+            <li><strong>Location:</strong> Kiambu County, Kenya</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> Flavian Mwaura</p>
+        <ul class="social">
+          <li><a href="mailto:flavian@example.com">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/flavian101"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/flavian-mwaura"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
+  </body>
+</html>
