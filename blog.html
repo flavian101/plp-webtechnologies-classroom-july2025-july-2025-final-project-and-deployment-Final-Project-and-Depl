@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Blog — Flavian Mwaura</title>
     <meta
       name="description"
-      content="Articles on programming tips, workflow optimization, and language learning."
+      content="Writing on TypeScript, Next.js, full-stack patterns, and ICT systems by Flavian Mwaura."
     />
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,54 +22,93 @@
           aria-expanded="false"
           aria-controls="primary-nav"
         >
-          ☰
+          <span class="sr-only">Toggle navigation</span>☰
         </button>
         <nav id="primary-nav" class="primary-nav" aria-label="Main">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <section class="container reveal">
-        <h1>Blog</h1>
-        <p>
-          Notes on graphics programming, workflow optimization, and Japanese
-          language learning.
+      <section class="container reveal" style="padding-top: 3.5rem">
+        <div class="section-label">Writing</div>
+        <h1 class="section-title">Blog</h1>
+        <p class="section-body">
+          Notes on TypeScript, Next.js architecture, full-stack patterns, and
+          ICT systems administration.
         </p>
       </section>
 
-      <section class="container blog-list reveal">
-        <article class="post-card">
-          <h2>Modular render passes in DirectX</h2>
-          <p>
-            Designing clean interfaces for per-pass resources, synchronization,
-            and debug overlays.
-          </p>
-          <a class="btn small" href="#">Read more</a>
-        </article>
-        <article class="post-card">
-          <h2>Python for reproducible workflows</h2>
-          <p>
-            Packaging scripts, config-driven pipelines, and documenting runbooks
-            for teams.
-          </p>
-          <a class="btn small" href="#">Read more</a>
-        </article>
-        <article class="post-card">
-          <h2>Learning Japanese effectively</h2>
-          <p>
-            Systems thinking applied to language learning: spaced repetition and
-            habit design.
-          </p>
-          <a class="btn small" href="#">Read more</a>
-        </article>
+      <section class="container reveal">
+        <div class="blog-list">
+          <article class="post-card">
+            <span class="tag post-tag purple">Next.js</span>
+            <h2>Building auth guards with Next.js middleware</h2>
+            <p>
+              How I implemented route protection in Nexora using Next.js
+              middleware — intercepting unauthenticated requests before they
+              reach page components.
+            </p>
+            <a class="btn small ghost" href="#">Read more</a>
+          </article>
+          <article class="post-card">
+            <span class="tag post-tag purple">TypeScript</span>
+            <h2>Optimistic UI patterns in React</h2>
+            <p>
+              Implementing optimistic likes and saves with instant feedback and
+              graceful rollback — how I handled the likes/saves feature in
+              Nexora.
+            </p>
+            <a class="btn small ghost" href="#">Read more</a>
+          </article>
+          <article class="post-card">
+            <span class="tag post-tag">ICT</span>
+            <h2>RBAC in Microsoft 365 for government environments</h2>
+            <p>
+              Lessons from administering Exchange Online and SharePoint for a
+              government ministry — structuring permissions for security and
+              compliance.
+            </p>
+            <a class="btn small ghost" href="#">Read more</a>
+          </article>
+          <article class="post-card">
+            <span class="tag post-tag purple">Tailwind CSS</span>
+            <h2>Dark/light theming without a UI library</h2>
+            <p>
+              Why I ditched DaisyUI and built a fully custom dark/light theme
+              system using Tailwind CSS variables — and how it made Nexora's
+              design more maintainable.
+            </p>
+            <a class="btn small ghost" href="#">Read more</a>
+          </article>
+          <article class="post-card">
+            <span class="tag post-tag">MongoDB</span>
+            <h2>Designing schemas for social features in MongoDB</h2>
+            <p>
+              Decisions behind modelling users, prompts, likes, and saves in a
+              document database — balancing read performance with query
+              flexibility.
+            </p>
+            <a class="btn small ghost" href="#">Read more</a>
+          </article>
+          <article class="post-card">
+            <span class="tag post-tag">Python</span>
+            <h2>Python automation for ICT administration</h2>
+            <p>
+              How scripting routine tasks at the State Department of Petroleum
+              saved 10+ hours of manual work per week — scripts, patterns, and
+              lessons learned.
+            </p>
+            <a class="btn small ghost" href="#">Read more</a>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -77,7 +116,7 @@
       <div class="container footer-grid">
         <p>&copy; <span id="year"></span> Flavian Mwaura</p>
         <ul class="social">
-          <li><a href="judeflavian20@gmail.com">Email</a></li>
+          <li><a href="mailto:judeflavian20@gmail.com">Email</a></li>
           <li>
             <a
               href="https://github.com/flavian101"

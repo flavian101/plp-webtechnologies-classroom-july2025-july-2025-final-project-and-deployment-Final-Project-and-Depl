@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Projects — Flavian Mwaura</title>
     <meta
       name="description"
-      content="DirectX graphics demos, Python automation scripts, SQL database designs, and other projects."
+      content="Projects by Flavian Mwaura — Next.js platforms, React apps, Java systems, and more."
     />
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,45 +22,40 @@
           aria-expanded="false"
           aria-controls="primary-nav"
         >
-          ☰
+          <span class="sr-only">Toggle navigation</span>☰
         </button>
         <nav id="primary-nav" class="primary-nav" aria-label="Main">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <section class="container reveal">
-        <h1>Projects</h1>
-        <p>
-          Selected work spanning real-time graphics, automation, and data
-          systems. Click into each for details and code.
+      <section class="container reveal" style="padding-top: 3.5rem">
+        <div class="section-label">Work</div>
+        <h1 class="section-title">Projects</h1>
+        <p class="section-body">
+          From full-stack Next.js platforms to Java enterprise systems —
+          selected work spanning web development, ICT tooling, and academic
+          engineering.
         </p>
-      </section>
 
-      <section class="container reveal">
-        <h2>Portfolio</h2>
-        <div id="project-list" class="project-grid" aria-live="polite">
-          <!-- Loaded via JS -->
-        </div>
-      </section>
-
-      <section class="container reveal">
-        <h2>Categories</h2>
         <div class="filters">
-          <button class="btn small" data-filter="all">All</button>
-          <button class="btn small" data-filter="graphics">Graphics</button>
-          <button class="btn small" data-filter="python">Python</button>
-          <button class="btn small" data-filter="sql">SQL</button>
-          <button class="btn small" data-filter="other">Other</button>
+          <button class="btn small primary" data-filter="all">All</button>
+          <button class="btn small" data-filter="Next.js">Next.js</button>
+          <button class="btn small" data-filter="React">React</button>
+          <button class="btn small" data-filter="TypeScript">TypeScript</button>
+          <button class="btn small" data-filter="Java">Java</button>
+          <button class="btn small" data-filter="C++">C++</button>
         </div>
+
+        <div id="project-list" class="project-grid" aria-live="polite"></div>
       </section>
     </main>
 
@@ -68,7 +63,7 @@
       <div class="container footer-grid">
         <p>&copy; <span id="year"></span> Flavian Mwaura</p>
         <ul class="social">
-          <li><a href="judeflavian20@gmail.com">Email</a></li>
+          <li><a href="mailto:judeflavian20@gmail.com">Email</a></li>
           <li>
             <a
               href="https://github.com/flavian101"
@@ -79,7 +74,7 @@
           </li>
           <li>
             <a
-              href="https://linkedin.com/in/flavian101"
+              href="https://linkedin.com/in/flavian-mwaura"
               target="_blank"
               rel="noopener"
               >LinkedIn</a

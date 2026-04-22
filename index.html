@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flavian Mwaura — Portfolio</title>
+    <title>Flavian Mwaura — Front-End & Full-Stack Developer</title>
     <meta
       name="description"
-      content="Portfolio of Flavian Mwaura — graphics programming, C++, DirectX, Python workflows, and technical communication."
+      content="Portfolio of Flavian Mwaura — Front-End and Full-Stack Web Developer building with TypeScript, React, and Next.js. Based in Nairobi, Kenya."
     />
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -16,83 +16,186 @@
 
     <header class="site-header">
       <div class="container header-grid">
-        <a class="logo" href="index.html" aria-label="Go to home">FM</a>
+        <a class="logo" href="index.html" aria-label="Flavian Mwaura home"
+          >FM</a
+        >
         <button
           class="menu-toggle"
           aria-expanded="false"
           aria-controls="primary-nav"
         >
-          <span class="sr-only">Toggle navigation</span>
-          ☰
+          <span class="sr-only">Toggle navigation</span>☰
         </button>
         <nav id="primary-nav" class="primary-nav" aria-label="Main">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main">
+      <!-- ── Hero ──────────────────────────────────────────────── -->
       <section class="hero container reveal">
         <div class="hero-text">
+          <div class="hero-eyebrow">Available for opportunities</div>
           <h1>Hi, I'm <span class="accent">Flavian Mwaura</span></h1>
           <p>
-            Computer Science undergraduate, graphics programmer, and technical
-            communicator. I design DirectX/C++ graphics demos, build Python
-            workflows, and document systems professionally.
+            Front-end developer and ICT professional building production-ready
+            web applications with TypeScript, React, and Next.js — while
+            administering enterprise systems at the Ministry of Agriculture,
+            Nairobi.
           </p>
           <div class="cta-group">
             <a class="btn primary" href="projects.html">View Projects</a>
-            <a class="btn ghost" href="about.html">Learn More</a>
+            <a class="btn ghost" href="about.html">About me</a>
+            <a class="btn outline" href="contact.html">Get in touch</a>
           </div>
         </div>
-        <figure class="hero-media">
-          <img src="images/hero.png" alt="Abstract real-time graphics render" />
-          <figcaption class="sr-only">
-            Showcase banner featuring graphics programming.
-          </figcaption>
-        </figure>
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-card-title">At a glance</div>
+          <div class="stat-grid">
+            <div class="stat">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Projects shipped</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2</div>
+              <div class="stat-label">Internships</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">7</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2025</div>
+              <div class="stat-label">CS Graduate</div>
+            </div>
+          </div>
+          <div class="hero-card-title">Primary stack</div>
+          <div class="hero-stack">
+            <span class="tag purple">TypeScript</span>
+            <span class="tag purple">React</span>
+            <span class="tag purple">Next.js</span>
+            <span class="tag purple">Tailwind CSS</span>
+            <span class="tag purple">MongoDB</span>
+          </div>
+        </div>
       </section>
 
-      <section class="container features reveal">
-        <h2>What I do</h2>
-        <div class="cards">
+      <!-- ── What I do ──────────────────────────────────────────── -->
+      <section class="container reveal">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">What I do</h2>
+        <div class="cards-grid">
           <article class="card">
-            <h3>Graphics programming</h3>
+            <div class="card-icon">🖥️</div>
+            <h3>Front-End Development</h3>
             <p>
-              DirectX 11/12, C++, Win32, modular rendering pipelines, resource
-              management, and shader authoring.
+              Building fast, accessible UIs with TypeScript, React, Next.js, and
+              Tailwind CSS — from landing pages to full-stack platforms.
             </p>
           </article>
           <article class="card">
-            <h3>Workflow automation</h3>
+            <div class="card-icon">⚙️</div>
+            <h3>Full-Stack & APIs</h3>
             <p>
-              Python automation, CI-friendly scripting, data processing, and
-              reproducible pipelines for teams.
+              Designing RESTful API endpoints, working with Node.js and MongoDB,
+              auth guards, and server-side rendering in Next.js.
             </p>
           </article>
           <article class="card">
-            <h3>Technical communication</h3>
+            <div class="card-icon">🔐</div>
+            <h3>ICT Systems Admin</h3>
             <p>
-              Clear documentation, API references, architectural diagrams, and
-              developer onboarding content.
+              Microsoft 365 administration (Exchange Online, SharePoint, Teams),
+              RBAC policies, VPN configuration, and government data security.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="container highlight reveal">
-        <h2>Featured projects</h2>
-        <div id="featured-projects" class="project-grid" aria-live="polite">
-          <!-- Loaded via JS -->
+      <!-- ── Featured Projects ──────────────────────────────────── -->
+      <section class="container reveal">
+        <div class="section-label">Work</div>
+        <h2 class="section-title">Featured projects</h2>
+        <p class="section-body">
+          A selection of recent work — from a live AI prompt-sharing platform to
+          a real-estate marketplace.
+        </p>
+        <div
+          id="featured-projects"
+          class="project-grid"
+          aria-live="polite"
+        ></div>
+        <div class="cta-center">
+          <a class="btn" href="projects.html">See all projects →</a>
+        </div>
+      </section>
+
+      <!-- ── Recent Experience ──────────────────────────────────── -->
+      <section class="container reveal">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Where I've worked</h2>
+        <div class="experience-list">
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">ICT Support Intern</div>
+                <div class="exp-org">
+                  Ministry of Agriculture — Kilimo House, Nairobi
+                </div>
+              </div>
+              <span class="exp-period">Jan 2026 – Present</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Designed workflow visualisation tools mapping 5+ internal
+                business processes, reducing cross-departmental coordination
+                delays.
+              </li>
+              <li>
+                Led ERP and database schema design for a ministry-wide records
+                management system supporting multi-departmental access.
+              </li>
+              <li>
+                Administered Microsoft 365 (Exchange Online, SharePoint, Teams)
+                for government staff with zero reported security breaches.
+              </li>
+            </ul>
+          </article>
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">IT Support Intern</div>
+                <div class="exp-org">
+                  State Department of Petroleum, Nairobi
+                </div>
+              </div>
+              <span class="exp-period">May – Aug 2023</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Maintained IT infrastructure for 50+ staff, achieving 99% system
+                uptime through proactive monitoring.
+              </li>
+              <li>
+                Built Python automation scripts that saved 10+ hours of manual
+                admin work per week.
+              </li>
+              <li>
+                Trained non-technical staff, driving a 25% reduction in routine
+                support tickets.
+              </li>
+            </ul>
+          </article>
         </div>
         <div class="cta-center">
-          <a class="btn" href="projects.html">See all projects</a>
+          <a class="btn ghost" href="about.html">Full background →</a>
         </div>
       </section>
     </main>
@@ -101,7 +204,7 @@
       <div class="container footer-grid">
         <p>&copy; <span id="year"></span> Flavian Mwaura</p>
         <ul class="social">
-          <li><a href="judeflavian20@gmail.com">Email</a></li>
+          <li><a href="mailto:judeflavian20@gmail.com">Email</a></li>
           <li>
             <a
               href="https://github.com/flavian101"
